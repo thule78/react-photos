@@ -20,7 +20,9 @@ class SearchBar extends Component{
     return(
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.term} onChange={this.handleChange} />
+          <div className="form-group">
+            <input type="text" value={this.state.term} onChange={this.handleChange} className="form-control" placeholder="search for photos"/>
+          </div>
         </form>
       </div>
 
